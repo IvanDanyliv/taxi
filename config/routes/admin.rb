@@ -8,7 +8,8 @@ devise_scope :admin_user do
 end
 
 namespace 'admin' do
+  resources :drivers
   resources :admin_users
-  authenticated :admin_user do root :to => 'admin_users#index', as: :root end
+  authenticated :admin_user do root :to => 'drivers#index', as: :root end
   devise_scope  :admin_user do root :to => 'admin_users/sessions#new', as: :unauthenticated_root end
 end

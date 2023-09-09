@@ -1,0 +1,17 @@
+%tr{ id: dom_id(driver) }
+  %td.icon_cell
+    = link_to admin_driver_path(driver), class: 'd-block', data: { turbo_frame: 'modal_main' } do
+      %i.bi.bi-file-text.h3
+  %td
+    = driver.id
+  %td
+    = driver.first_name
+  %td
+    = driver.last_name
+  %td
+    = driver.phone
+  %td
+    = driver.birthday
+  %td.icon_cell
+    = link_to edit_admin_driver_path(driver), class: 'd-block', data: { turbo_frame: "modal_main" } do
+      %i.bi.bi-pencil-square.h3

@@ -1,0 +1,43 @@
+.list-group.mb-3
+  .list-group-item
+    .row
+      .col-md-3
+        .text-muted.fw-bold= driver.class.human_attribute_name(:id)
+      .col-md-9
+        = driver.id
+  .list-group-item
+    .row
+      .col-md-3
+        .text-muted.fw-bold= driver.class.human_attribute_name(:first_name)
+      .col-md-9
+        = driver.first_name
+  .list-group-item
+    .row
+      .col-md-3
+        .text-muted.fw-bold= driver.class.human_attribute_name(:last_name)
+      .col-md-9
+        = driver.last_name
+  .list-group-item
+    .row
+      .col-md-3
+        .text-muted.fw-bold= driver.class.human_attribute_name(:phone)
+      .col-md-9
+        = driver.phone
+  .list-group-item
+    .row
+      .col-md-3
+        .text-muted.fw-bold= driver.class.human_attribute_name(:birthday)
+      .col-md-9
+        = driver.birthday
+  .list-group-item
+    .row
+      .col-md-3
+        .text-muted.fw-bold= driver.class.human_attribute_name(:created_at)
+      .col-md-9
+        = driver.created_at
+  .list-group-item
+    .row
+      .col-md-3
+        .text-muted.fw-bold= driver.class.human_attribute_name(:updated_at)
+      .col-md-9
+        = driver.updated_at

@@ -1,0 +1,9 @@
+.list-group.mb-3
+  .list-group-item
+    = render Admin::FieldsetComponent.new(form, :first_name, :text)
+  .list-group-item
+    = render Admin::FieldsetComponent.new(form, :last_name, :text)
+  .list-group-item
+    = render Admin::FieldsetComponent.new(form, :phone, :text)
+  .list-group-item
+    = render Admin::FieldsetComponent.new(form, :birthday, :datetime)
